@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html>
 <head>
@@ -9,35 +8,18 @@
                 color: rgb(113, 0, 121);
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 50px;
+                text-align: center;
             }
-        </style>
-    <p1> See the differences of how time formats are displayed in <b>real time</b> </p1>
+    </style>
+    <p> See the differences of how time formats are displayed in <b>real time</b> </p>
         <style>
-            p1 {
+            p {
                 color: rgb(226, 8, 211);
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 30px;
+                text-align: center;
             }
-        </style>
-        <br>
-       <p2>►Here is a useful <a href=https://militarytimechart.com> Time Format Chart</a></p2>
-        <style>
-            p2 {
-                font-size: 30px;
-                color:rgb(149, 3, 207);
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-        </style>
-        <br>
-        <p3>►Check out this <a href="https://worldpopulationreview.com/country-rankings/countries-that-use-12-hour-time">Worldwide Time Format Map</a></p3>
-        <style>
-            p3 {
-                font-size: 30px;
-                color: rgb(159, 0, 239);
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-        </style>
-        
+        </style> 
     <style>
         body {
             background-color: rgb(254, 176, 254);
@@ -45,7 +27,7 @@
         .Clock1 {
             position: absolute;
             color: rgb(184, 13, 184);
-            top: 40%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 120px;
@@ -55,7 +37,7 @@
         .Clock2 {
             position:absolute;
             color: rgb(131, 33, 131);
-            top: 70%;
+            top: 56%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 120px;
@@ -72,7 +54,7 @@ function showClocks() {
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
+    var seconds = date.getSeconds();        
     var session = "AM";
 
     if (hours == 0) {
@@ -104,5 +86,28 @@ function showClocks() {
 }
 showClocks();
 </script>
+<p2>►Here is a useful <a href=https://militarytimechart.com> Time Format Chart</a></p2>
+<style>
+    p2 {
+        font-size: 30px;
+        color:rgb(149, 3, 207);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: fixed;
+        top: 70%;
+        right: 33%;
+    }
+</style>
+<br>
+<p3>►Check out this <a href="https://worldpopulationreview.com/country-rankings/countries-that-use-12-hour-time">Worldwide Time Format Map</a></p3>
+<style>
+    p3 {
+        font-size: 30px;
+        color: rgb(159, 0, 239);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: fixed;
+        top: 80%;
+        right: 30%;
+    }
+</style>
 </body>
 </html>
